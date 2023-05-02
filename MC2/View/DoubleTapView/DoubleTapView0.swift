@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DoubleTapView: View {
+struct DoubleTapView0: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,8 +15,8 @@ struct DoubleTapView: View {
 
 
 
-struct DoubleTapView_Previews: PreviewProvider {
+struct DoubleTapView0_Previews: PreviewProvider {
     static var previews: some View {
-        DoubleTapView()
+        DoubleTapView0()
     }
 }

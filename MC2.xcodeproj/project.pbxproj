@@ -11,9 +11,10 @@
 		B5246A772A0010DF00656A33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A762A0010DF00656A33 /* ContentView.swift */; };
 		B5246A792A0010E000656A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5246A782A0010E000656A33 /* Assets.xcassets */; };
 		B5246A7C2A0010E000656A33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5246A7B2A0010E000656A33 /* Preview Assets.xcassets */; };
-		B5246A832A00115C00656A33 /* DoubleTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A822A00115C00656A33 /* DoubleTapView.swift */; };
+		B5246A832A00115C00656A33 /* DoubleTapView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A822A00115C00656A33 /* DoubleTapView0.swift */; };
 		B5246A852A0011BA00656A33 /* DoubleTapView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A842A0011BA00656A33 /* DoubleTapView1.swift */; };
 		B5246A872A001B8D00656A33 /* DoubleTapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A862A001B8D00656A33 /* DoubleTapView2.swift */; };
+		B5246A942A00ACAD00656A33 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A932A00ACAD00656A33 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +23,10 @@
 		B5246A762A0010DF00656A33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5246A782A0010E000656A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5246A7B2A0010E000656A33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B5246A822A00115C00656A33 /* DoubleTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView.swift; sourceTree = "<group>"; };
+		B5246A822A00115C00656A33 /* DoubleTapView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView0.swift; sourceTree = "<group>"; };
 		B5246A842A0011BA00656A33 /* DoubleTapView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView1.swift; sourceTree = "<group>"; };
 		B5246A862A001B8D00656A33 /* DoubleTapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView2.swift; sourceTree = "<group>"; };
+		B5246A932A00ACAD00656A33 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,10 @@
 			children = (
 				B5246A742A0010DF00656A33 /* MC2App.swift */,
 				B5246A762A0010DF00656A33 /* ContentView.swift */,
-				B5246A782A0010E000656A33 /* Assets.xcassets */,
 				B5246A7A2A0010E000656A33 /* Preview Content */,
-				B5246A822A00115C00656A33 /* DoubleTapView.swift */,
-				B5246A842A0011BA00656A33 /* DoubleTapView1.swift */,
-				B5246A862A001B8D00656A33 /* DoubleTapView2.swift */,
+				B5246A8A2A00ABB800656A33 /* Resource */,
+				B5246A882A00AB9300656A33 /* Extension */,
+				B5246A892A00ABA100656A33 /* View */,
 			);
 			path = MC2;
 			sourceTree = "<group>";
@@ -74,6 +75,104 @@
 				B5246A7B2A0010E000656A33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5246A882A00AB9300656A33 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5246A932A00ACAD00656A33 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5246A892A00ABA100656A33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5246A952A00ACF800656A33 /* MainView */,
+				B5246A922A00AC8500656A33 /* ZoomView */,
+				B5246A912A00AC5600656A33 /* LongPressView */,
+				B5246A902A00AC4200656A33 /* PanView */,
+				B5246A8F2A00AC3800656A33 /* SwipeView */,
+				B5246A8E2A00AC2F00656A33 /* DragView */,
+				B5246A8D2A00AC2700656A33 /* TapView */,
+				B5246A8C2A00AC0100656A33 /* RotationView */,
+				B5246A8B2A00ABDF00656A33 /* DoubleTapView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5246A8A2A00ABB800656A33 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B5246A782A0010E000656A33 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B5246A8B2A00ABDF00656A33 /* DoubleTapView */ = {
+			isa = PBXGroup;
+			children = (
+				B5246A822A00115C00656A33 /* DoubleTapView0.swift */,
+				B5246A842A0011BA00656A33 /* DoubleTapView1.swift */,
+				B5246A862A001B8D00656A33 /* DoubleTapView2.swift */,
+			);
+			path = DoubleTapView;
+			sourceTree = "<group>";
+		};
+		B5246A8C2A00AC0100656A33 /* RotationView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RotationView;
+			sourceTree = "<group>";
+		};
+		B5246A8D2A00AC2700656A33 /* TapView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TapView;
+			sourceTree = "<group>";
+		};
+		B5246A8E2A00AC2F00656A33 /* DragView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DragView;
+			sourceTree = "<group>";
+		};
+		B5246A8F2A00AC3800656A33 /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwipeView;
+			sourceTree = "<group>";
+		};
+		B5246A902A00AC4200656A33 /* PanView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PanView;
+			sourceTree = "<group>";
+		};
+		B5246A912A00AC5600656A33 /* LongPressView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LongPressView;
+			sourceTree = "<group>";
+		};
+		B5246A922A00AC8500656A33 /* ZoomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZoomView;
+			sourceTree = "<group>";
+		};
+		B5246A952A00ACF800656A33 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5246A772A0010DF00656A33 /* ContentView.swift in Sources */,
-				B5246A832A00115C00656A33 /* DoubleTapView.swift in Sources */,
+				B5246A832A00115C00656A33 /* DoubleTapView0.swift in Sources */,
 				B5246A752A0010DF00656A33 /* MC2App.swift in Sources */,
+				B5246A942A00ACAD00656A33 /* ColorExtension.swift in Sources */,
 				B5246A852A0011BA00656A33 /* DoubleTapView1.swift in Sources */,
 				B5246A872A001B8D00656A33 /* DoubleTapView2.swift in Sources */,
 			);
@@ -282,11 +382,13 @@
 				DEVELOPMENT_TEAM = YKG7843K2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,9 +396,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Ryu.MC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,11 +416,13 @@
 				DEVELOPMENT_TEAM = YKG7843K2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,9 +430,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Ryu.MC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
