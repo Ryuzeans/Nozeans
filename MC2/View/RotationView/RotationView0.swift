@@ -12,7 +12,7 @@ struct RotationView0: View {
         GeometryReader { geo in
             
             
-            VStack(alignment: .leading ,spacing: geo.size.width / 7){
+            VStack(alignment: .leading ,spacing: geo.size.width / 7) {
                 
                 Text("회전")
                     .font(.system(size: geo.size.width / 11).weight(.bold))
