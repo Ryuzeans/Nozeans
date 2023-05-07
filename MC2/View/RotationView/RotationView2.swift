@@ -15,40 +15,53 @@ struct RotationView2: View {
     @State private var showingSuccess = false
     
     var body: some View {
-        GeometryReader { geo in
+        
+        ZStack {
             
-            ZStack {
-                
+            if showingSuccess {
                 VStack {
                     
-                    Text("화면의 먼지의 얼굴을 \n 돌려주세요")
-                        .font(.system(size: geo.size.width / 11).weight(.bold))
+                    Text("잘하셨어요!\n")
+                        .font(.system(size: 36,weight: .bold))
                         .multilineTextAlignment(.center)
-                        .padding(.bottom,geo.size.width / 6)
                     
-                    Image("Munji")
+                    Image("RotationOn")
                         .resizable()
+                        .scaledToFit()
                         .cornerRadius(45)
-                        .frame(width: geo.size.width / 1.2, height: geo.size.width / 1.2)
-                        .rotationEffect(currentAmount + finalAmount)
                     
                 }
-                .frame(width: geo.size.width, height: geo.size.height)
-                .gesture(
-                    RotationGesture()
-                        .onChanged { angle in
-                            currentAmount = angle
-                        }
-                        .onEnded { angle in
-                            finalAmount += currentAmount
-                            currentAmount = .zero
-                            print(Int(finalAmount.degrees))
-                        })
-                
+            } else {
+                VStack {
+                    
+                    Text("회전을 시켜\n제 마음을 확인해봐요!")
+                        .font(.system(size: 36,weight: .bold))
+                        .multilineTextAlignment(.center)
+                    
+                    Image("RotationOff")
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(45)
+                    .rotationEffect(currentAmount + finalAmount)
+                }
             }
         }
-        
-        
+        .gesture(
+            RotationGesture()
+                .onChanged { angle in
+                    currentAmount = angle
+                }
+                .onEnded { angle in
+                    finalAmount += currentAmount
+                    currentAmount = .zero
+                    if (finalAmount.degrees < -175 || finalAmount.degrees > 175) {
+                        withAnimation(.easeOut(duration: 0.5)) {
+                            showingSuccess = true
+                        }
+                    } else {
+                        showingSuccess = false
+                    }
+                })
     }
 }
 
