@@ -25,6 +25,11 @@ struct TouchGesture: Identifiable,Hashable{
 
 struct MainView: View {
     
+    enum ViewState {
+        case first
+        case second
+        case third
+    }
 
     let brands: [TouchGesture] = [
         .init(name: "길게 누르기"),
@@ -39,6 +44,8 @@ struct MainView: View {
     @State private var navigationPath = [TouchGesture]()
     
     @State private var showFullStack = false
+    
+    @State private var viewState: ViewState = .first
     
     var body: some View {
         NavigationStack(path: $navigationPath) {
@@ -66,24 +73,29 @@ struct MainView: View {
                                 Image(systemName: "chevron.backward")
                                     .frame(width: 6, height: 11)
                                     .foregroundColor(.pink)
-                                
+
                                 Text("처음으로")
                                     .font(.system(size: 16))
                                     .foregroundColor(.pink)
-                                    
-                                    
+                                
+                                Spacer()
                                 
                                 Text("\(brand.name)")
                                   .font(.system(size: 17))
                                   .fontWeight(.black)
                                   .foregroundColor(.gray)
-//                                  .padding(.leading)
-                                  .padding(.trailing,120)
+                                  
+                                Spacer()
                                 
+                                Spacer()
                                 
                                 
                             }
-                            .padding(.leading,16)
+                            .frame(maxWidth: .infinity,alignment: .leading)
+                            .padding(.horizontal,16)
+                            .padding(.vertical,20)
+                            .background(Color("HeaderColor"))
+                            
                         }
                         viewForBrand(brand)
                         
@@ -100,11 +112,11 @@ struct MainView: View {
     func viewForBrand(_ brand: TouchGesture) -> AnyView {
         switch brand.name {
         case "길게 누르기":
-            return AnyView(DoubleTapView1())
+            return AnyView(Color.gray)
         case "두 번 누르기":
-            return AnyView(DoubleTapView2())
+            return AnyView(DoubleTapView())
         case "나침반":
-            return AnyView(DoubleTapView3())
+            return AnyView(Color.gray)
         case "끌어오기":
             return AnyView(Color.blue)
         default:
