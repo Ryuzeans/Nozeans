@@ -14,6 +14,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            
+            Button(action: {
+                           // 실행할 코드
+                           print("Button tapped!")
+                       }) {
+                           Text("Tap Me!")
+                       }.btnStyle()
+
         }
         .padding()
     }

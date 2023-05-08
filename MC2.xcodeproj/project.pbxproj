@@ -23,6 +23,8 @@
 		B5246AA32A07DCA400656A33 /* PanView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246AA22A07DCA400656A33 /* PanView1.swift */; };
 		B5246AA72A07F35300656A33 /* PanView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246AA62A07F35300656A33 /* PanView2.swift */; };
 		B5246AA92A07F58600656A33 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246AA82A07F58600656A33 /* MapView.swift */; };
+		B5CCC36A2A0892E300C418B3 /* BtnStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC3692A0892E300C418B3 /* BtnStyle.swift */; };
+		B5CCC36C2A08E27000C418B3 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC36B2A08E27000C418B3 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		B5246AA22A07DCA400656A33 /* PanView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanView1.swift; sourceTree = "<group>"; };
 		B5246AA62A07F35300656A33 /* PanView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanView2.swift; sourceTree = "<group>"; };
 		B5246AA82A07F58600656A33 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B5CCC3692A0892E300C418B3 /* BtnStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnStyle.swift; sourceTree = "<group>"; };
+		B5CCC36B2A08E27000C418B3 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B5246A932A00ACAD00656A33 /* ColorExtension.swift */,
+				B5CCC36B2A08E27000C418B3 /* ViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 				B5246A8D2A00AC2700656A33 /* TapView */,
 				B5246A8C2A00AC0100656A33 /* RotationView */,
 				B5246A8B2A00ABDF00656A33 /* DoubleTapView */,
+				B5CCC3692A0892E300C418B3 /* BtnStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,12 +281,14 @@
 				B5246AA12A07D99D00656A33 /* PanView0.swift in Sources */,
 				B5246AA32A07DCA400656A33 /* PanView1.swift in Sources */,
 				B5246A832A00115C00656A33 /* DoubleTapView0.swift in Sources */,
+				B5CCC36C2A08E27000C418B3 /* ViewExtension.swift in Sources */,
 				B5246AA92A07F58600656A33 /* MapView.swift in Sources */,
 				B5246AA72A07F35300656A33 /* PanView2.swift in Sources */,
 				B5246A9F2A014E1C00656A33 /* RotationView3.swift in Sources */,
 				B5246A752A0010DF00656A33 /* MC2App.swift in Sources */,
 				B5246A942A00ACAD00656A33 /* ColorExtension.swift in Sources */,
 				B5246A852A0011BA00656A33 /* DoubleTapView1.swift in Sources */,
+				B5CCC36A2A0892E300C418B3 /* BtnStyle.swift in Sources */,
 				B5246A972A00CB7100656A33 /* RotationView0.swift in Sources */,
 				B5246A872A001B8D00656A33 /* DoubleTapView2.swift in Sources */,
 			);
