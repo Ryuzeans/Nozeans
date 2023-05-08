@@ -42,6 +42,7 @@ struct PanView0: View {
                 .font(.system(size: 36, weight: .light))
                 .foregroundColor(Color(UIColor.lightGray))
                 .multilineTextAlignment(.center)
+            
         }
     }
 }
