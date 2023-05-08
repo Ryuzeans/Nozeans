@@ -2,60 +2,77 @@
 //  DoubleTapView1.swift
 //  MC2
 //
-//  Created by YU WONGEUN on 2023/05/02.
+//  Created by 하명관 on 2023/05/08.
 //
+
 
 import SwiftUI
 
 struct DoubleTapView1: View {
+
+    @Environment(\.dismiss) private var dismiss
+    let nextViewAction: () -> Void
+
     var body: some View {
-        GeometryReader { geo in
+        VStack(alignment: .center,spacing: 0){
             
-            
-            VStack(alignment: .leading ,spacing: geo.size.width / 7){
-                
-                Text("두번 누르기")
-                    .font(.system(size: geo.size.width / 11).weight(.bold))
-                
-                
-                Text("이전에 배웠던 누르기와 다른점이 무엇일까요?")
-                    .font(.system(size: geo.size.width / 15).weight(.semibold))
-                    .multilineTextAlignment(.leading)
-                
-                Text("탭은 1번 눌렀지만 더블 탭은 화면을 2번 눌러야 합니다.")
-                    .font(.system(size: geo.size.width / 18).weight(.light))
-                    .multilineTextAlignment(.leading)
-                
-                Text("어디에 사용될까요?")
-                    .font(.system(size: geo.size.width / 15).weight(.semibold))
-                    .multilineTextAlignment(.leading)
-                
-                Text("표준적으로 Zoom in(확대)와 Zoom out(축소)에 사용됩니다.")
-                    .font(.system(size: geo.size.width / 18).weight(.light))
-                    .multilineTextAlignment(.leading)
-                
-                
-                Button {
-                    // 실행할 코드
-                } label: {
-                    
-                    Text("직접 배워보러 가요!")
-                        .font(.system(size: geo.size.width / 20).weight(.bold))
-                        .foregroundColor(.black)
-                        .frame(width: geo.size.width / 1.45, height: geo.size.height / 15)
-                        
-                }
-                .buttonStyle(.bordered)
-                
+            HStack {
+                Image(systemName: "Chevron.left")
             }
-            .padding(geo.size.width / 8)
             
+            Text("두번 누르기")
+                .font(.system(size: 48,weight: .black))
+                .padding(.bottom,97)
+            
+            Image("PanCircle")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .padding(.bottom,113)
+            
+            Text("글자 복사하기 및 붙여넣기  화면 확대하거나 축소할 때 사용해요")
+                .foregroundColor(Color.gray)
+                .multilineTextAlignment(.center)
+                .lineSpacing(10)
+                .font(.system(size: 32,weight: .light))
+                .padding(.bottom,97)
+            
+            Button("다음") {
+                nextViewAction()
+            }
         }
+        .navigationBarBackButtonHidden(true) // Hide default back button
+//        .navigationBarItems(leading:
+//            Button(action: {
+//                dismiss()
+//            }) {
+//                HStack(spacing: 5) {
+//                    Image(systemName: "chevron.backward")
+//                        .frame(width: 6, height: 11)
+//                        .foregroundColor(.pink)
+//                    
+//                    Text("처음으로")
+//                        .font(.system(size: 16))
+//                        .foregroundColor(.pink)
+//                }
+//            }
+//        )
+
+//        .toolbar {
+//            ToolbarItem(placement: .principal) {
+//                    Text("두번 누르기")
+//                      .font(.system(size: 24))
+//                      .fontWeight(.black)
+//                      .foregroundColor(.gray)
+//            }
+//        }
+        
+        
     }
 }
 
 struct DoubleTapView1_Previews: PreviewProvider {
     static var previews: some View {
-        DoubleTapView1()
+        MainView()
     }
 }

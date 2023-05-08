@@ -1,22 +1,20 @@
 //
-//  DoubleTapView1.swift
+//  Header.swift
 //  MC2
 //
-//  Created by YU WONGEUN on 2023/05/02.
+//  Created by 하명관 on 2023/05/08.
 //
 
 import SwiftUI
 
-struct DoubleTapView0: View {
+struct Header: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-
-
-struct DoubleTapView0_Previews: PreviewProvider {
+struct Header_Previews: PreviewProvider {
     static var previews: some View {
-        DoubleTapView0()
+        Header()
     }
 }
