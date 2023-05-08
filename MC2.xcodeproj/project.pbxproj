@@ -15,6 +15,10 @@
 		B5246A852A0011BA00656A33 /* DoubleTapView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A842A0011BA00656A33 /* DoubleTapView1.swift */; };
 		B5246A872A001B8D00656A33 /* DoubleTapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A862A001B8D00656A33 /* DoubleTapView2.swift */; };
 		B5246A942A00ACAD00656A33 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A932A00ACAD00656A33 /* ColorExtension.swift */; };
+		B5246A972A00CB7100656A33 /* RotationView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A962A00CB7100656A33 /* RotationView0.swift */; };
+		B5246A9B2A0140E500656A33 /* RotationView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A9A2A0140E500656A33 /* RotationView1.swift */; };
+		B5246A9D2A01435300656A33 /* RotationView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A9C2A01435300656A33 /* RotationView2.swift */; };
+		B5246A9F2A014E1C00656A33 /* RotationView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5246A9E2A014E1C00656A33 /* RotationView3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		B5246A842A0011BA00656A33 /* DoubleTapView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView1.swift; sourceTree = "<group>"; };
 		B5246A862A001B8D00656A33 /* DoubleTapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView2.swift; sourceTree = "<group>"; };
 		B5246A932A00ACAD00656A33 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B5246A962A00CB7100656A33 /* RotationView0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView0.swift; sourceTree = "<group>"; };
+		B5246A9A2A0140E500656A33 /* RotationView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView1.swift; sourceTree = "<group>"; };
+		B5246A9C2A01435300656A33 /* RotationView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView2.swift; sourceTree = "<group>"; };
+		B5246A9E2A014E1C00656A33 /* RotationView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationView3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,10 @@
 		B5246A8C2A00AC0100656A33 /* RotationView */ = {
 			isa = PBXGroup;
 			children = (
+				B5246A962A00CB7100656A33 /* RotationView0.swift */,
+				B5246A9A2A0140E500656A33 /* RotationView1.swift */,
+				B5246A9C2A01435300656A33 /* RotationView2.swift */,
+				B5246A9E2A014E1C00656A33 /* RotationView3.swift */,
 			);
 			path = RotationView;
 			sourceTree = "<group>";
@@ -245,11 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5246A9B2A0140E500656A33 /* RotationView1.swift in Sources */,
+				B5246A9D2A01435300656A33 /* RotationView2.swift in Sources */,
 				B5246A772A0010DF00656A33 /* ContentView.swift in Sources */,
 				B5246A832A00115C00656A33 /* DoubleTapView0.swift in Sources */,
+				B5246A9F2A014E1C00656A33 /* RotationView3.swift in Sources */,
 				B5246A752A0010DF00656A33 /* MC2App.swift in Sources */,
 				B5246A942A00ACAD00656A33 /* ColorExtension.swift in Sources */,
 				B5246A852A0011BA00656A33 /* DoubleTapView1.swift in Sources */,
+				B5246A972A00CB7100656A33 /* RotationView0.swift in Sources */,
 				B5246A872A001B8D00656A33 /* DoubleTapView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
